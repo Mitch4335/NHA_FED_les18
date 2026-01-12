@@ -14,8 +14,11 @@
 
             @media only screen and (min-width: 768px) {
             .row {
-                display: flex;
-                flex-wrap: wrap;
+            [class*="col-"] {
+            float: left;
+            padding: 15px;
+            display: flex;
+            }
             }
 
             .col-1 {width: 8.33%;}
@@ -33,7 +36,7 @@
         }
             
             header {
-                background-image: url(https://cityapptour.com/img/containers/assets/nederland/delft/Delft-kopfoto.jpg/985954deaa77f0c7906e0be5d687514f.jpg);
+                background-image: url(afbeeldingen/delft.png);
                 background-position: center;
                 background-size: cover;
                 color: white;
@@ -55,18 +58,19 @@
             #attractie {
                 background-color: rgb(17, 113, 139);
                 padding: 5px;
-                height: 95%
+                height: 95%;
             }
 
             img {
-                max-width: 300px;
-                max-height: 300px;
+                max-height: 10%;
+                max-width: 15%;
                 float: right;
             }
 
             footer {
                 background-color: rgb(52, 52, 199);
                 padding: 1px;
+                clear: left;
             }
 
         </style>
@@ -81,38 +85,30 @@
         <main>
             <div class="row">
                 <div class="col-2">
-                    <section id="feitjes">
-                        <article>
-                            <h2>5 feiten over Delft:</h2>
-                            <ol>
-                                <li>De naam van de stad komt van het woord 'delven', wat graven betekent. Het verwijst naar de oudste gracht van de stad, de Oude Delft, die rond het jaar 1100 werd gegraven.</li>
-                                <li>Delft staat bekend als de 'Prinsenstad' omdat Willem van Oranje er vanaf 1572 woonde. Hij werd daar in 1584 vermoord in het Prinsenhof, waar je de kogelgaten nog steeds in de muur kunt zien.</li>
-                                <li>Rond het jaar 1500 was Delft de grootste bierproducent van Nederland. Er waren destijds maar liefst 200 bierbrouwerijen binnen de stadsmuren die bier exporteerden naar andere steden en het buitenland.</li>
-                                <li>In 1477 werd de allereerste Nederlandstalige bijbel gedrukt in Delft. Dit gebeurde op de plek waar nu een herinneringsbijbel te zien is boven een pand aan de Markt.</li>
-                                <li>De Oude Kerk heeft een iconische toren die ongeveer twee meter uit het lood staat. De toren begon al tijdens de bouw in 1325 te verzakken omdat de ondergrond niet stevig genoeg was.</li>
-                            </ol>
-                        </article>
-                    </section>
+                    <article id="feitjes">
+                        <h2>5 feiten over Delft:</h2>
+                         <ol>
+                            <li>De naam van de stad komt van het woord 'delven', wat graven betekent. Het verwijst naar de oudste gracht van de stad, de Oude Delft, die rond het jaar 1100 werd gegraven.</li>
+                            <li>Delft staat bekend als de 'Prinsenstad' omdat Willem van Oranje er vanaf 1572 woonde. Hij werd daar in 1584 vermoord in het Prinsenhof, waar je de kogelgaten nog steeds in de muur kunt zien.</li>
+                            <li>Rond het jaar 1500 was Delft de grootste bierproducent van Nederland. Er waren destijds maar liefst 200 bierbrouwerijen binnen de stadsmuren die bier exporteerden naar andere steden en het buitenland.</li>
+                            <li>In 1477 werd de allereerste Nederlandstalige bijbel gedrukt in Delft. Dit gebeurde op de plek waar nu een herinneringsbijbel te zien is boven een pand aan de Markt.</li>
+                            <li>De Oude Kerk heeft een iconische toren die ongeveer twee meter uit het lood staat. De toren begon al tijdens de bouw in 1325 te verzakken omdat de ondergrond niet stevig genoeg was.</li>
+                        </ol>
+                    </article>
                 </div>
 
                 <div class="col-9">
-                    <section id="attractie">
+                    <article id="attractie">
                         <div id="att1">
                             <h2>Bekende toeristische attracties in Delft</h2>
-                            <article>
                                 <h3>Oude Kerk</h3>
-                                <p>De Oude Kerk wordt ook wel de 'Oude Jan' of ‘Scheve Jan’ genoemd. De bijnaam 'scheve' komt doordat de toren van de kerk zo scheef staat, zelfs schever dan de toren van Pisa! In de Oude Kerk liggen er bekende personen begraven zoals Johannes Vermeer, Antoni van Leeuwenhoek en Piet Hein. Door middel van een rondleiding kan je de verhalen en het interieur van de kerk ontdekken.
-                                <img src="https://www.oudeennieuwekerkdelft.nl/media/suwnokv1/oude-kerk-vanaf-toren-nieuwe-kerk-large.jpg?width=1500&height=1400&format=webp&v=1d9cb6a8009ad30" alt="Oude Kerk van Delft"></p>
-                            </article>
+                                <p><img src="https://www.oudeennieuwekerkdelft.nl/media/suwnokv1/oude-kerk-vanaf-toren-nieuwe-kerk-large.jpg?width=1500&height=1400&format=webp&v=1d9cb6a8009ad30" alt="Oude Kerk van Delft">Tegenwoordig staat de Oude Kerk niet alleen bekend om haar scheve toren, maar ook om de bekende historische figuren die er zijn begraven, zoals Antoni van Leeuwenhoek en Maarten Tromp. Maar denk ook aan Piet Hein, de bekende zeevaarder die in 1628 bij Cuba de Zilvervloot kaapte. Daarnaast ligt er een grafsteen voor Johannes Vermeer, een van de beroemdste kunst­schilders uit de Nederlandse geschiede­nis. Zijn graf is inmiddels geruimd; hij stierf als arm man. <br>Over de vraag of de Oude Kerk een geschikte rustplaats is, valt te twisten. De Trinitasklok, met zijn 9000 kilo de grootste historische luidklok van het land, produceert zo’n kabaal dat het geluid in het verleden regelmatig voor opschudding zorgde in de omgeving.
+                                    Uiteindelijk werd besloten de klok alleen te luiden bij koninklijke begrafe­nissen, die opvallend genoeg niet in deze kerk plaatsvinden, maar in de Nieuwe Kerk die een eeuw later werd gebouwd. Daar bevindt zich de grafkelder van het huis van Oranje-Nassau.</p>     
                         </div>
                         <div id="att2">
-                            <article>
                                 <h3>Prinsenhof</h3>
-                                <p>Het Prinsenhof is een van de belangrijkste monumenten in Delft. Het staat in de Top-100 van monumenten. Het gebouw vertelt het verhaal van Delft en de Nederlandse geschiedenis. Museum Prinsenhof Delft is een belangrijke culturele plek in de regio. Veel bezoekers van Delft beginnen hun bezoek in dit museum.
-                                <img src="https://d21x6x124ggvch.cloudfront.net/styles/1920w/s3/2024-05/Exterieur%20Prinsenhof_MDS_40.JPG?itok=-DlcKh05" alt="Prinsenhof in Delft"></p>
-                            </article>
-                        </div>
-                    </section>
+                                <p><img src="https://d21x6x124ggvch.cloudfront.net/styles/1920w/s3/2024-05/Exterieur%20Prinsenhof_MDS_40.JPG?itok=-DlcKh05" alt="Prinsenhof in Delft">Museum Prinsenhof Delft is een museum in de Nederlandse stad Delft. Het is gevestigd in het voormalige Sint-Agathaklooster dat behoort tot de Top 100 van de Rijksdienst voor de Monumentenzorg uit 1990. Het museum belicht Delfts blauw, grote Delftse wetenschappers (Hugo de Groot, Antoni van Leeuwenhoek) en Delftse meesters, Willem van Oranje en het Huis Oranje-Nassau. Het museum heeft een collectie schilderijen, aardewerk en gebruiksvoorwerpen uit de Gouden Eeuw. <br>Het museum trekt jaarlijks ongeveer 63.500 bezoekers. Het museum werd als Gemeentemuseum Delft in 1897 opgericht en was gevestigd in het stadhuis van Delft. In 1906 werd het museum verplaatst naar een zaal in het Agathaklooster, een verdieping boven de plek waar sinds 1887 het Rijksmuseum 'De historische zaal van het Prinsenhof' was gevestigd. Het kloostercomplex dat voordien verschillende functies had, werd tussen 1938 tot 1962 volledig gerestaureerd tot museum. <br>In het complex is Willem van Oranje doodgeschoten. De kogelgaten in de muur zijn nog altijd te zien. In 2014 werd het vernieuwde museum heropend door koning Willem-Alexander. In januari 2025 sloot het museum opnieuw haar deuren voor een grote verbouwing, met de belofte dat het in 2027 weer zou openen. De kosten voor de verbouwing worden gedeeld door de gemeente Delft en een bijdrage van de familie Vlek.</p>
+                    </article>
                 </div>
             </div>
         </main>
@@ -122,6 +118,4 @@
         </footer>
     </body>
 </html>
-
-
 
